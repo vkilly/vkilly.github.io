@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Phantom by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.webp" alt="" /></span><span class="title">Violet Killy</span>
+								</a>
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="projects.html">Portfolio</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Active Object-Based Robot Navigation</h1>
+							<h3>Master's Thesis | MIT Computer Science & Artificial Intelligence Laboratory (CSAIL) under Prof. John Leonard | 2020 - 2022</h3>
+							<hr />						
+							<section>
+								<h3>Overview</h3>
+								<p>I designed and implemented an active vision system that enables a mobile robot to localize using real-world objects instead of artificial fiducial markers. The platform actively steers an RGB-D camera to maintain optimal viewpoints for real-time 6-DOF object pose estimation, improving the quality of object-based navigation experiments.</p>
+								<hr />	
+								<div class="row">
+									<div class="col-4">
+										<span class="image fit">
+											<img src="images/thesis/thesis_assembly.webp" alt="">
+										</span>
+									</div>								
+									<div class="col-8">
+										<h3>What I Built</h3>
+											<ul>
+												<li>Designed and assembled a modular active-vision robotic platform on a Clearpath Jackal UGV</li>
+												<li>Implemented position-based visual servoing on a custom pan-tilt camera system</li>
+												<li>Integrated Intel RealSense RGB-D sensing, ROS, and motion capture for end-to-end evaluation</li>
+												<li>Implemented real-time camera control that continuously tracks target objects during robot motion</li>
+												<li>Built the software pipeline connecting object detection, pose estimation, control, and localization into a single experimental platform</li>
+											</ul>
+									</div>
+								</div>	
+								<div class="row">
+									<div class="col-4">
+										<span class="image fit">
+											<img src="images/thesis/thesis_pan_tilt.webp" alt="">
+										</span>
+									</div>
+									<div class="col-8">
+										<h3>Key Contributions</h3>
+											<ul>
+												<li>Demonstrated continuous object tracking while a robot circumnavigated stationary targets</li>
+												<li>Quantitatively compared classical fiducial localization (AprilTags) with learning-based object pose estimation (NVIDIA DOPE)</li>
+												<li>Evaluated localization accuracy against motion-capture ground truth under both normal and low-light conditions</li>
+												<li>Established a reusable research platform for future object-level SLAM and active perception experiments</li>
+												<li>Mentored a high school student through mechanical assembly and data collection summer project</li>
+											</ul>
+									</div>
+								</div>
+								<hr />
+								<h3>Network Architecture</h3>
+								<div class="row aln-center">
+									<div class="col-6">
+										<span class="image fit">
+											<img src="images/thesis/thesis_network.webp" alt="">
+										</span>
+									</div>
+								</div>
+								<hr />
+
+								<h3>Technical Stack</h3>
+								<div class="row">
+									<div class="col-4">
+										<h4>Hardware</h4>
+										<ul>
+											<li>Clearpath Jackal</li>
+											<li>Intel RealSense D435</li>
+											<li>Micro Maestro Servo Controller</li>
+											<li>OptiTrack Motion Capture</li>
+										</ul>
+									</div>
+									<div class="col-4">
+										<h4>Software</h4>
+										<ul>
+											<li>ROS</li>
+											<li>Python</li>
+											<li>OpenCV</li>
+											<li>MATLAB</li>
+										</ul>
+									</div>
+									<div class="col-4">
+										<h4>Algorithms</h4>
+										<ul>
+											<li>Position-Based Visual Servoing</li>
+											<li>PD control</li>
+											<li>Fiducial Marker Detection</li>
+											<li>NVIDIA Deep Objct Pose Estimation (DOPE)</li>
+										</ul>
+									</div>
+								</div>
+								<hr/>
+								<h3>Normal Lighting Conditions</h3>
+								<div class="row">
+									<div class="col-8">
+										<h4>AprilTags</h4>
+										<span class="image fit">
+											<img src="images/thesis/thesis_tag_light.webp" alt="">
+										</span>
+									</div>
+									<div class="col-4">
+										<h4>DOPE-Trained Objects</h4>
+										<span class="image fit">
+											<img src="images/thesis/thesis_dope_light.webp" alt="">
+										</span>
+									</div>
+								</div>
+								<h3>Low Light Conditions</h3>
+								<div class="row">
+									<div class="col-8">
+										<span class="image fit">
+											<img src="images/thesis/thesis_tag_dark.webp" alt="">
+										</span>
+									</div>
+									<div class="col-4">
+										<span class="image fit">
+											<img src="images/thesis/thesis_dope_dark.webp" alt="">
+										</span>
+									</div>
+								</div>
+								<hr />
+								<div class="row">
+									<div class="col-4">
+										<span class="image fit">
+											<img src="images/thesis/thesis_error_plot.webp" alt="">
+										</span>
+									</div>								
+									<div class="col-8">
+										<h3>Results</h3>
+											<ul>
+												<li>Successfully maintained target objects within the camera's field of view throughout navigation experiments</li>
+												<li>AprilTag-based localization remained robust even in low-light conditions</li>
+												<li>DOPE enabled semantic object localization without fiducial markers, but showed increased sensitivity to lighting and reflective surfaces, highlighting practical challenges for real-world object-based navigation</li>
+											</ul>
+									</div>
+								</div>	
+								<hr/>
+								<div class="row">
+									<div class="col-6">
+										<span class="image fit">
+											<img src="images/thesis/thesis_results_april.webp" alt="">
+										</span>
+									</div>
+									<div class="col-6">
+										<span class="image fit">
+											<img src="images/thesis/thesis_results_dope.webp" alt="">
+										</span>
+									</div>
+								</div>
+								<hr/>
+								<h3>Acknowledgments</h3>
+								<div class="row">
+									<div class="col-6">
+										<span class="image fit">
+											<img src="images/thesis/mrg.webp" alt="">
+										</span>
+									</div>
+									<div class="col-6">
+										<p>This thesis project was conducted as part of my master's research with MIT CSAIL's Marine Robotics Group under the supervision and guidance of Prof. John Leonard. I also recieved invaluable technical support from MIT instructor, Steve Banzaert as well as fellow labmates Kevin Doherty and Kurran Singh. I had valuable lab assistance from student and mentee Pablo Hu on the mechanical assembly of the pan-tilt camera system. </p>
+									</div>
+								</div>
+								
+							</section>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/violetkilly/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

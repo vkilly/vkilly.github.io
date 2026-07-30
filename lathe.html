@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Phantom by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.webp" alt="" /></span><span class="title">Violet Killy</span>
+								</a>
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="projects.html">Portfolio</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Designing and Fabricating a Desktop Lathe</h1>
+							<h3>MIT 2.720 | Spring 2022</h3>
+							<hr />						
+							<section>
+								<div class="row">
+									<div class="col-6">
+										<span class="image fit">
+											<img src="images/lathe/lathe_team.webp" alt="">
+										</span>
+									</div>	
+									<div class="col-6">
+										<p><b>Project: </b> Build a desktop lathe that can meet repeatability, accuracy, and functional requirements — including: cut steel to an accuracy of 0.001" and survive our Professor's "Death Test" 
+										<br><b>Course: </b>MIT 2.720 (Elements of Mechanical Design). An advanced study of modeling, design, and integration, along with best practices for use of machine elements like bearings, bolts, belts, flexures, and gears.
+										<br><b>Collaborators: </b> Melissa Brei, Jacob Easley, Collin Goldbach, Violet Killy, Jimmy Tran, Lara Zlokapa</p>
+									</div>
+								</div>
+								<hr />
+
+								<h3>Overview</h3>
+								<p>At the start of this project, my team and I were presented with an example CAD assembly and a box of supplied parts, with the following catch: scattered throughout the design were a number of errors/traps that could only be amended with thorough engineering analysis. We set out to analayze, redesign, build, and evaluate a fully functional desktop lathe in one semester. To keep us on track and guide our decision-making, we first developed an extensive Gantt chart and a series of functional requirements, including intended load capacities, repeatability and accuracy metrics, and speed, power, and torque requirements. </p>
+								<hr/>
+								<h4>Functional Requirements</h4>	
+								<div class="row">
+									<div class="col-16">
+										<span class="image fit">
+											<img src="images/lathe/lathe_frs.webp" alt="">
+										</span>
+									</div>	
+								</div>
+								<hr/>
+								<h4>Key Contributions</h4>	
+								<div class="row">
+									<div class="col-16">
+										<ul>
+											<li>Budget/BOM management and ordering of all parts</li>
+											<li>Collaboration on spindle subassembly design and analysis</li>
+											<li>Manufacturing of cross-slide x-axis flexure</li>
+											<li>Frequency analysis of cross-slide subassembly</li>
+											<li>Characterization of error motions using Coordinate Measuring Machine (CMM)</li>
+										</ul>
+									</div>	
+								</div>
+								<hr/>
+
+								<h3>Spindle</h3>
+								<p>The spindle subassembly was made up of a shaft, housing, and two taper bearings — one press fit into the housing and the other axially free and preloaded by a washer. We had to correctly size the press fit bearing, determine an appropriate preload for the free one, and design the shaft to minimize deflection at expected cutting loads. </p>
+								<div class="row">
+									<div class="col-4">
+										<h4>Spindle Analysis Objectives</h4>
+										<ol>
+											<li>Stiffness (bearing spacing, beam bending)</li>
+											<li>Bearing Preload</li>
+											<li>Thermal Analysis</li>
+											<li>Lifetime and Fatigue</li>
+											<li>Stress Analysis</li>
+											<li>Functional Requirements</li>
+										</ol>
+									</div>
+									<div class="col-4">
+										<p>Spindle CAD assembly</p>
+										<span class="image fit">
+											<img src="images/lathe/spindle_cad.webp" alt="">
+										</span>
+									</div>	
+									<div class="col-4">
+										<p>Completed spindle</p>
+
+										<span class="image fit">
+											<img src="images/lathe/spindle.webp" alt="">
+										</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-8">
+										<p>Spindle shaft free body diagram:</p>
+										<span class="image fit">
+											<img src="images/lathe/spindle_FBD.webp" alt="">
+										</span>
+										<p>Spindle shaft under axial load modeled as springs in series:</p>
+										<span class="image fit">
+											<img src="images/lathe/spindle_shaft.webp" alt="">
+										</span>
+									</div>
+									<div class="col-4">
+										<p>MATLAB analysis of bearing reactions forces and bending given a cutting load:</p>
+										<span class="image fit">
+											<img src="images/lathe/spindle_matlab.webp" alt="">
+										</span>
+									</div>
+								</div>
+								<hr />
+								<h3>Cross-Slide</h3>
+								<p>The cross-slide subassembly served as the lathe's x-axis and was essentially a large flexure which we cut on a waterjet, controlled by turning a lead screw</p>
+								<div class="row">
+									<div class="col-4">
+										<h4>Key Considerations</h4>
+										<ol>
+											<li>Stiffness (in each axis)</li>
+											<li>Waterjet Tolerances</li>
+											<li>Range of travel</li>
+											<li>Lifetime and fatigue</li>
+											<li>Resonant frequencies</li>
+										</ol>
+									</div>
+									<div class="col-8">
+										<span class="image fit">
+											<img src="images/lathe/cross_slide_stiffness.webp" alt="">
+										</span>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-4">
+										<span class="image fit">
+											<img src="images/lathe/cross-slide.webp" alt="">
+										</span>
+										<span class="image fit">
+											<img src="images/lathe/cross-slide_test.webp" alt="">
+										</span>
+									</div>
+									<div class="col-8">
+										<p>We tested factors like flexure stiffness and lead screw accuracy through a series of experiments using force gauge and dial indicators</p>
+										<span class="image fit">
+											<img src="images/lathe/lead_screw_accuracy.webp" alt="">
+										</span>
+									</div>
+								</div>
+								<div class="row">
+									<p>With normal operating speeds expected up to 200RPM, we determined that normal modes should be above 33Hz to minimize vibration. To analyze frequency, we excited the cross slide assembly with a rubber mallet. I analyzed the resulting audio with Audacity and MATLAB, and found through PSD analysis and found that the peaks were around 900Hz and in the high 4000s. Less than one percent of the signal strength was below 300Hz, meeting our design requirement. </p>
+									<div class="col-6">
+										<span class="image fit">
+											<img src="images/lathe/cross_slide_freq_analysis.webp" alt="">
+										</span>
+									</div>
+									<div class="col-6">
+										<span class="image fit">
+											<img src="images/lathe/psd.webp" alt="">
+										</span>
+									</div>
+								</div>
+								<hr/>
+								<h3>Final Assembly</h3>
+								<div class="row">
+									<div class="col-6">
+										<span class="image fit">
+											<img src="images/tiles/lathe_tile.webp" alt="">
+										</span>
+									</div>
+									<div class="col-6">
+										<span class="image fit">
+											<img src="images/lathe/lathe_run.webp" alt="">
+										</span>
+									</div>
+								</div>
+
+							</section>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/violetkilly/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

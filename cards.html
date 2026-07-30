@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Phantom by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.webp" alt="" /></span><span class="title">Violet Killy</span>
+								</a>
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="projects.html">Portfolio</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Playing Card Identification & Pose Estimation</h1>
+							<h3>MIT 6.869 (Advances in Computer Vision) | Class Project with Ziqi Lu | 2021</h3>
+							<hr />						
+							<section>
+								<h3>Overview</h3>
+								<p>We developed a deep-learning pipeline for identifying playing cards and estimating their 6-DOF pose using synthetic training data. The project explored how semantic object detection could be used as landmarks for object-level SLAM, comparing learned pose estimation against traditional feature-based methods.</p>
+								<hr />	
+								<div class="row">
+									<div class="col-6">
+										<span class="image fit">
+											<img src="images/cards/cards1.webp" alt="">
+										</span>
+									</div>								
+									<div class="col-6">
+										<h3>Highlights</h3>
+											<ul>
+												<li>Generated synthetic training data using NVIDIA NDDS and Unreal Engine</li>
+												<li>Trained a DOPE-based neural network for playing card pose estimation</li>
+												<li>Benchmarked performance against a SIFT + PnP feature-based pipeline</li>
+												<li>Integrated the detector into an object-level SLAM system</li>
+												<li>Demonstrated consistent card-level mapping using learned object landmarks despite noisy odometry.</li>
+											</ul>
+									</div>
+								</div>	
+								<p>Python • ROS • OpenCV • PyTorch • NVIDIA DOPE • NDDS • Unreal Engine • GTSAM • Object-Level SLAM</p>
+								
+								<div class="row">
+									<div class="col-4">
+										<span class="image fit">
+											<img src="images/cards/cards2.webp" alt="">
+										</span>
+									</div>	
+									<div class="col-6">
+										<span class="image fit">
+											<img src="images/cards/cards3.webp" alt="">
+										</span>
+										<span class="image fit">
+											<img src="images/cards/cards4.webp" alt="">
+										</span>
+									</div>	
+								</div>
+
+								<hr />
+								<h3>Why it Mattered</h3>
+								<p>This project was my first exposure to learned object pose estimation and semantic SLAM, ideas that later influenced my master's thesis on active object-based navigation and continue to inform my work on robotics and spacecraft autonomy.</p>
+							
+							</section>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/violetkilly/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
